@@ -31,28 +31,82 @@ body{
 }
 
 .container{
+    font-family: 'Varela Round', sans-serif;
     display: flex;
   background-color: royalblue;
     justify-content: center;
     gap: 20px;
     padding: 20px;
-    margin:50px;
-    min-height: 75vh;
+    margin:50px 50px;
+    min-height: 65vh;
+    background-image: url("white-smoke-right-side-background_23-2147734841.avif");
+    background-repeat: no-repeat;
+    
+    background-size: cover;        
+    background-position: center; 
 }
 
 .bottom{
     position:sticky;
     display:flex;
+    height: 130px;
     justify-content: center;
     align-items: center;
+    color:aliceblue;
     bottom: 0px;
     background-color: black;
-    height: 50px;
-    width: 100%;
+
+    flex-direction: column;
 }
 
 #volume{
-   
-
     width: 1000px;
+}
+.icons i {
+    color: white;
+    margin: 10px;
+    cursor: pointer;
+}
+.left{
+    
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    margin: 50px 40px;
+    
+    width:60%;
+
+   
+}
+.right{
+    width:40%;
+}
+.cell {
+    display: flex;
+    width: 100%;
+
+    align-items: center;
+    justify-content: space-between;   
+
+    padding: 5px 10px;              
+    margin: 15px 0;                  
+
+    
+    background-color: white;
+    border-radius: 50px;
+    color: black;
+
+
+}
+.cell img{
+    width: 43px;
+    height: 43px;
+    border-radius: 100%;
+}
+.songcontainer{
+    margin:30px 0;
+}
+.songinfo{
+    position:absolute;
+     left: 15vw;
 }
