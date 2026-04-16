@@ -106,6 +106,10 @@ body{
     height: 43px;
     border-radius: 100%;
 }
+.cell span{
+    flex:0.1;
+    text-align: center;
+}
 .songcontainer{
     margin:30px 0;
 
