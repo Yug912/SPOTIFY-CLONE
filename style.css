@@ -3,7 +3,7 @@
 
 body{
     background-color: rgb(201, 201, 198);
-    
+    position: relative;
 }
 *{
     margin: 0;
@@ -12,6 +12,8 @@ body{
 }
 
 .navbar{
+    position:sticky;
+    top:0;
     font-family: 'Ubuntu', sans-serif;
     display: flex;
     align-items: center;
@@ -41,7 +43,7 @@ body{
     min-height: 65vh;
     background-image: url("white-smoke-right-side-background_23-2147734841.avif");
     background-repeat: no-repeat;
-    
+    border: 3px solid rgb(167, 146, 146);
     background-size: cover;        
     background-position: center; 
 }
