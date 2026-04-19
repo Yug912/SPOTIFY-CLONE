@@ -55,3 +55,17 @@ This Spotify clone was created by Yug Thakral as a project to learn web developm
 It demonstrates how to build an interactive UI and handle audio using JavaScript.
 
 This is just the beginning — I’ll build even better and more advanced projects in the future 🚀
+
+## 👨‍💻 Contributor
+
+**Yug Thakral**
+
+---
+
+## 🤝 Connect With Me
+
+<p>
+  <a href="https://www.linkedin.com/in/yug-thakral-a38252317/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-Yug%20Thakral-blue?style=for-the-badge&logo=linkedin" />
+  </a>
+</p>
