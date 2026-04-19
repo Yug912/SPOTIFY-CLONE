@@ -9,6 +9,8 @@ let songitemplay=Array.from(document.getElementsByClassName('songitemplay'));
 let bottomname=document.querySelector('.bottomname');
 let songindex=0;
 
+let singer=document.querySelector('.singer');
+let description=document.querySelector('.description');
 
 //list of songs
 let songs=[
@@ -140,3 +142,6 @@ document.getElementById('previous').addEventListener('click',()=>{
     bottomname.innerText=songs[songindex-1].songname;
     gif.style.opacity=1;
 })
+
+singer.innerHTML="Dhanda Nyoliwala's 'Kohram' is a critically acclaimed 2025–2026 album and subsequent massive India tour that redefined Haryanvi hip-hop. The album features gritty, energetic rap, while the tour included packed shows in cities like Delhi and Mumbai. It is widely recognized as a major commercial success in Desi hip-hop.";
+description.innerHTML="This is a Spotify clone created by Yug Thakral as a project to learn web development. It is built using HTML, CSS and JavaScript. The project is still in development and more features will be added in the future.";
