@@ -12,8 +12,9 @@ let songindex=0;
 let singer=document.querySelector('.singer');
 let description=document.querySelector('.description');
 
-//list of songs
+
 let songs=[
+
     {songname:"Knife Brows",filepath:"Knife Brows.mp3",coverpath:"Knife Brows.jpeg",duration:"2:59"},
     {songname:"Mia Cara",filepath:"Mia Cara.mp3",coverpath:"Mia Cara.jpeg",duration:"4:06"},
     {songname:"ISHQ BAWLA",filepath:"ISHQ BAWLA.mp3",coverpath:"ISHQ BAWLA.jpeg",duration:"4:54"},
@@ -27,7 +28,7 @@ let songs=[
 ]
 
 
-//make all button elements to play
+
 const makeallplay=()=>{
      songitemplay.forEach((element)=>{
         element.classList.remove('fa-pause-circle');
@@ -36,7 +37,7 @@ const makeallplay=()=>{
 }
 
 
-//play song when play button is clicked
+
 songitemplay.forEach((element)=>{
     element.addEventListener('click',(e)=>{
          makeallplay();
@@ -67,7 +68,7 @@ songitemplay.forEach((element)=>{
     })
 })
 
-//set song name , cover image and duration for each song item
+
 songitems.forEach((element,i)=>{
          element.getElementsByTagName('img')[0].src=songs[i].coverpath;
          element.getElementsByTagName('span')[0].innerText=songs[i].songname;
@@ -75,7 +76,7 @@ songitems.forEach((element,i)=>{
 }
 )
 
-//play and pause song when master play button is clicked
+
 masterplay.addEventListener('click',()=>{
     if(audioelement.paused||audioelement.currentTime<=0){
         audioelement.play();
@@ -93,20 +94,20 @@ masterplay.addEventListener('click',()=>{
 })
 
 
-//update progress bar as song plays
+
 audioelement.addEventListener('timeupdate',()=>{
     let progress=parseInt((audioelement.currentTime/audioelement.duration)*100);
     progressbar.value=progress;
 })
 
 
-//seek song when progress bar is changed
+
 progressbar.addEventListener('change',()=>{
     audioelement.currentTime=(progressbar.value*audioelement.duration)/100;
 })
 
 
-//play next song when next button is clicked
+
 document.getElementById('next').addEventListener('click',()=>{
     if(songindex>=9)
     {
@@ -125,7 +126,7 @@ document.getElementById('next').addEventListener('click',()=>{
 })
 
 
-//play previous song when previous button is clicked
+
 document.getElementById('previous').addEventListener('click',()=>{
     if(songindex<=1)
     {
@@ -144,4 +145,4 @@ document.getElementById('previous').addEventListener('click',()=>{
 })
 
 singer.innerHTML="Dhanda Nyoliwala's 'Kohram' is a critically acclaimed 2025–2026 album and subsequent massive India tour that redefined Haryanvi hip-hop. The album features gritty, energetic rap, while the tour included packed shows in cities like Delhi and Mumbai. It is widely recognized as a major commercial success in Desi hip-hop.";
-description.innerHTML="This is a Spotify clone created by Yug Thakral as a project to learn web development. It is built using HTML, CSS and JavaScript. The project is still in development and more features will be added in the future.";
+description.innerHTML="This is a Spotify clone created by Yug Thakral as a project to learn web development. It is built using HTML, CSS and JavaScript. This is just the start — better projects coming soon 🚀";
